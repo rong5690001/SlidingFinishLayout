@@ -301,7 +301,7 @@ public class SlidingFinishLayout extends PercentRelativeLayout implements OnTouc
         if (bgShadow && getContext() instanceof Activity) {
             ViewGroup decorView = (ViewGroup) ((Activity) getContext()).getWindow().getDecorView();
             shadowView = new View(getContext());
-            shadowView.setBackgroundColor(getResources().getColor(shadowColor));
+            shadowView.setBackgroundColor(shadowColor);
             shadowView.setAlpha(START_ALPHA);
             RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT
                     , RelativeLayout.LayoutParams.MATCH_PARENT);
